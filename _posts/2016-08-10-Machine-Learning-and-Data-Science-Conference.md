@@ -5,9 +5,9 @@ title: "Machine Learning
 Conference."
 description: "We [me and colleagues] were representing our office at Microsoft's
 Machine Learning and Data Science Conference."
-tags: [IndiaMLmeet, Microsoft, Techjini]
+tags: [IndiaMLMeet, Microsoft, Techjini]
 image:
-  feature: IndiaMLmeet/parabola.jpg
+  feature: IndiaMLMeet/parabola.jpg
   credit: Vineesh N P
   creditlink: https://www.twitter.com/vineeshvalsalan/
 
@@ -17,7 +17,7 @@ The Microsoft Machine Learning & Data Sciences Conference was the place to disco
 how machine learning and artificial intelligence technologies are helping build an intelligent world.
 
 Let me take you readers to the atmosphere that
-we had at [#IndiaMLmeet](https://twitter.com/hashtag/IndiaMLmeet). Coming to a
+we had at [#IndiaMLMeet](https://twitter.com/hashtag/IndiaMLMeet). Coming to a
 little background, Microsoft announced the conference and opened registration.
 We came to know about this from our CEO [Amit](https://twitter.com/amit0). As we know that machine learning is gonna be a cardinal part of future, we were too eager to register.
 After couple of days, selected candidates got  awesome
@@ -40,8 +40,8 @@ Upon registration Microsoft provided basic booklet, pen, food coupon, etc... jus
 saying, the quality of everything was impressive. And we headed towards the top floor, called Botania. Breakfast was served there.
 
 <figure class="half">
-	<a href="{{site.url}}/images/IndiaMLmeet/presentation01.jpg"><img src="{{site.url}}/images/IndiaMLmeet/presentation01.jpg" alt=""></a>
-	<a href="{{site.url}}/images/IndiaMLmeet/presentation02.jpg"><img src="{{site.url}}/images/IndiaMLmeet/presentation02.jpg" alt=""></a>
+	<a href="{{site.url}}/images/IndiaMLMeet/presentation01.jpg"><img src="{{site.url}}/images/IndiaMLMeet/presentation01.jpg" alt=""></a>
+	<a href="{{site.url}}/images/IndiaMLMeet/presentation02.jpg"><img src="{{site.url}}/images/IndiaMLMeet/presentation02.jpg" alt=""></a>
 	<figcaption>Keynote</figcaption>
 </figure>
 
@@ -56,8 +56,8 @@ to this, it can even predict at what ratio water and fertilizers should be provi
 the crop. The interesting thing is it’s already started in Andra Pradesh(India).
 
 <figure class="half">
-	<a href="{{site.url}}/images/IndiaMLmeet/royce01.jpg"><img src="{{site.url}}/images/IndiaMLmeet/royce01.jpg" alt=""></a>
-	<a href="{{site.url}}/images/IndiaMLmeet/royce02.jpg"><img src="{{site.url}}/images/IndiaMLmeet/royce02	.jpg" alt=""></a>
+	<a href="{{site.url}}/images/IndiaMLMeet/royce01.jpg"><img src="{{site.url}}/images/IndiaMLMeet/royce01.jpg" alt=""></a>
+	<a href="{{site.url}}/images/IndiaMLMeet/royce02.jpg"><img src="{{site.url}}/images/IndiaMLMeet/royce02	.jpg" alt=""></a>
 	<figcaption>Keynote</figcaption>
 </figure>
 
@@ -73,7 +73,7 @@ methods for immunodeficiency and cancer. And self driving vehicles, intelligent
 traffic management system, Smart natural calamity warning systems ,etc...  
 
 ### I think that is me
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">PRISM by <a href="https://twitter.com/tech_mahindra">@tech_mahindra</a> is a predictive analytics platform to automate Machine Learning processes <a href="https://twitter.com/hashtag/IndiaMLmeet?src=hash">#IndiaMLmeet</a> <a href="https://t.co/pTTAFBpasA">pic.twitter.com/pTTAFBpasA</a></p>&mdash; Microsoft India (@MicrosoftIndia) <a href="https://twitter.com/MicrosoftIndia/status/762618179369656320">August 8, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">PRISM by <a href="https://twitter.com/tech_mahindra">@tech_mahindra</a> is a predictive analytics platform to automate Machine Learning processes <a href="https://twitter.com/hashtag/IndiaMLMeet?src=hash">#IndiaMLMeet</a> <a href="https://t.co/pTTAFBpasA">pic.twitter.com/pTTAFBpasA</a></p>&mdash; Microsoft India (@MicrosoftIndia) <a href="https://twitter.com/MicrosoftIndia/status/762618179369656320">August 8, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Hackathon
@@ -89,7 +89,7 @@ of the project. We were trying to make use of Microsoft emotion API's, which wil
 gives us details of emotions of a face. And that data will be fed to
 our algorithm. The algorithm will predict an `attention Index`, If the attention index is above 50, that person needs attention, and if it is above 80 then there is definitely something serious going around. The algorithm will learn from each verified results.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Parabola?src=hash">#Parabola</a> showcases how <a href="https://twitter.com/hashtag/Microsoft?src=hash">#Microsoft</a> Vision &amp; Emotion API can help analyse child abuse <a href="https://twitter.com/hashtag/IndiaMLmeet?src=hash">#IndiaMLmeet</a> <a href="https://twitter.com/hashtag/Hackathon?src=hash">#Hackathon</a></p>&mdash; Microsoft Developer (@msdevindia) <a href="https://twitter.com/msdevindia/status/762909624458633217">August 9, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Parabola?src=hash">#Parabola</a> showcases how <a href="https://twitter.com/hashtag/Microsoft?src=hash">#Microsoft</a> Vision &amp; Emotion API can help analyse child abuse <a href="https://twitter.com/hashtag/IndiaMLMeet?src=hash">#IndiaMLMeet</a> <a href="https://twitter.com/hashtag/Hackathon?src=hash">#Hackathon</a></p>&mdash; Microsoft Developer (@msdevindia) <a href="https://twitter.com/msdevindia/status/762909624458633217">August 9, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 24 Hours went like a blizz. Coffee and code, code and coffee. Finally our prototype
@@ -105,9 +105,9 @@ exposure, but also a good network of friends. Thank you [Microsoft](https://www.
 and [Techjini](http://www.techjini.com)
 
 <figure class="third">
-	<a href="{{site.url}}/images/IndiaMLmeet/hackathon01.jpg"><img src= "{{site.url}}/images/IndiaMLmeet/hackathon01.jpg" alt=""></a>
-	<a href="{{site.url}}/images/IndiaMLmeet/hackathon02.jpg"><img src="{{site.url}}/images/IndiaMLmeet/hackathon02.jpg" alt=""></a>
-	<a href="{{site.url}}/images/IndiaMLmeet/closing.jpg"><img src="{{site.url}}/images/IndiaMLmeet/closing.jpg" alt=""></a>
+	<a href="{{site.url}}/images/IndiaMLMeet/hackathon01.jpg"><img src= "{{site.url}}/images/IndiaMLMeet/hackathon01.jpg" alt=""></a>
+	<a href="{{site.url}}/images/IndiaMLMeet/hackathon02.jpg"><img src="{{site.url}}/images/IndiaMLMeet/hackathon02.jpg" alt=""></a>
+	<a href="{{site.url}}/images/IndiaMLMeet/closing.jpg"><img src="{{site.url}}/images/IndiaMLMeet/closing.jpg" alt=""></a>
 	<figcaption>Bye Bye</figcaption>
 </figure>
 
