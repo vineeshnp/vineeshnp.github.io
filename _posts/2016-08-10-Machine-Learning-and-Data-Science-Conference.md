@@ -28,7 +28,7 @@ August 2016, for the event to kick off.
 ## Day 1 Keynote and Kicking off Hackathon
 
 We left to the ITC Gardenia- one of the finest hotel in bangalore - early morning.
-Booked an UBER Taxi.Waited for half an hour, often its hard to get UBER in morning. We gave up and  took an auto-rikshaw.
+ Booked an UBER Taxi.Waited for half an hour, often its hard to get UBER in morning. We gave up and  took an auto-rikshaw.
 
 Upon reaching [ITC](http://www.itchotels.in/hotels/itcgardenia.aspx), we passed the main gate, and stepped forward. The reception was excellent, and registration was
 well organized. There were several registration desk. We were suppose to
@@ -112,4 +112,7 @@ and [Techjini](http://www.techjini.com)
 </figure>
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">50 billion sensors to go online by 2020 <a href="https://twitter.com/hashtag/IndiaMLMeet?src=hash">#IndiaMLMeet</a> <a href="https://twitter.com/hashtag/IoT?src=hash">#IoT</a> <a href="https://twitter.com/hashtag/techjini?src=hash">#techjini</a> <a href="https://t.co/sVGmhxpHjS">pic.twitter.com/sVGmhxpHjS</a></p>&mdash; Vineesh Valsalan (@vineeshvalsalan) <a href="https://twitter.com/vineeshvalsalan/status/762513441730940929">August 8, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hackers indulge in a game of words before the <a href="https://twitter.com/hashtag/Hackathon?src=hash">#Hackathon</a> results <a href="https://twitter.com/hashtag/IndiaMLmeet?src=hash">#IndiaMLmeet</a> <a href="https://t.co/mV5eiYoqJJ">pic.twitter.com/mV5eiYoqJJ</a></p>&mdash; Microsoft Developer (@msdevindia) <a href="https://twitter.com/msdevindia/status/762956533055430656">August 9, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
