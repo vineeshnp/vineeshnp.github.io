@@ -3,8 +3,7 @@ layout: post
 title: "Machine Learning
 & Data Sciences
 Conference."
-description: "We [me and colleagues] were representing our office at Microsoft's
-Machine Learning and Data Science Conference."
+description: "Our experience at Microsoft Machine Learning & Data Sciences Conference."
 tags: [IndiaMLMeet, Microsoft, Techjini]
 image:
   feature: IndiaMLMeet/parabola.jpg
