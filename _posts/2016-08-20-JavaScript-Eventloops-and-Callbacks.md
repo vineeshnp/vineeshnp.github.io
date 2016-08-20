@@ -149,6 +149,5 @@ queue.
 for execution.
 * And that function[`callback()`] is executed.
 
-Non blocking nature of javascript is the one. Even in case of server side, nodejs
- the Architecture remains the same. The api's might be written in C or C++ there.
-For further reading on concurrency model and eventloop refer [this](https://developer.mozilla.org/en/docs/Web/JavaScript/EventLoop)
+Non blocking nature of javascript is the one which keeps it apart from others.
+[For further reading on concurrency model and eventloop refer this](https://developer.mozilla.org/en/docs/Web/JavaScript/EventLoop)
