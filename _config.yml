@@ -6,13 +6,14 @@ words_per_minute: 200
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 #url: http://localhost:4000
-url: https://vineeshnp.github.io
+#url: https://vineeshnp.github.io
+url: https://www.vineeshnp.com
 
 # Owner/author information
 owner:
   name:           Vineesh Narikutty Pacha
   avatar:         avatar.jpg
-  bio:            "A passionate fullstack JS developer."
+  bio:            "Human, Pinaist, Traveller and a passionate fullstack JS developer."
   email:          vineeshvalsalan@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        vineeshvalsalan
