@@ -6,10 +6,36 @@ tags: [vineesh narikutty pacha,personal, blog]
 comments: false
 image:
   feature: background01.jpg
-  credit: Matt Benson
-  creditlink: https://unsplash.com/@mattgyver
 ---
 
+<article>
+    <a href="{{ site.url }}/images/circle_logo.jpg">
+      <img src="{{ site.url }}/images/circle_logo.jpg"  class="animated bounceIn fadeIn circleImage">
+    </a>
+    <h3 class="animated fadeInDown">
+        <a href="{{ site.url }}">
+        	<p style="font-size:1.2rem;font-weight:300">{{ site.owner.bio }}</p>
+        </a>
+    </h3>
+    <hr class="hr-line animated fadeInDown">
+    <h3 class="header-title-wrap">
+           <a class="btn animated fadeInDown" href="{{ site.url }}/about">
+           <i class="fa fa-fw fa-user"></i>&nbsp; About
+           </a>
+           <a class="btn animated fadeInDown" href="{{ site.url }}/posts">
+           <i class="fa fa-fw fa-pencil"></i>&nbsp; Posts
+           </a>
+           <a class="btn animated fadeInDown" href="{{ site.url }}/projects">
+           <i class="fa fa-fw fa-laptop"></i>&nbsp; Projects
+           </a>
+          <a href="https://twitter.com/{{ site.owner.twitter }}" target='_blank'  class='btn animated fadeInDown'>
+            <i class="fa fa-fw fa-twitter"></i>&nbsp; Twitter
+          </a>
+          <a href="https://linkedin.com/in/{{ site.owner.linkedin }}" target='_blank' class='btn animated fadeInDown'>
+            <i class="fa fa-fw fa-linkedin"></i>&nbsp; LinkedIn
+          </a>
+      </h3>
+</article>
 {% for post in paginator.posts %}
 <article class="hentry">
   <header>
