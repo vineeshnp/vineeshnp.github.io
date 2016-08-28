@@ -7,7 +7,7 @@ words_per_minute: 200
 # When testing locally leave blank or use http://localhost:4000
 #url: http://localhost:4000
 #url: https://vineeshnp.github.io
-url: https://vineeshnp.com
+url: http://vineeshnp.com
 
 # Owner/author information
 owner:
