@@ -4,7 +4,6 @@ title: "Functional programming in Javascript"
 description: "a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. Here we are trying
 that with Javascript"
 tags: [Javascript, functional-programming, blog]
-animatedheader: true
 
 ---
 >In computer science, functional programming is a programming paradigm—a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data - wikipedia.org
@@ -279,9 +278,9 @@ console.log("The total number is", totalNumber); // 20
 ```
 
 These are just examples, for more explanation on this please visit
-[cryto.net's article](http://cryto.net/~joepie91/blog/2015/05/04/functional-programming-in-Javascript-map-filter-reduce/)
+[cryto.net's article](http://cryto.net/~joepie91/blog/2015/05/04/functional-programming-in-javascript-map-filter-reduce/)
 
-courtesy for map, reduce, filter code snippets : [cryto.net](http://cryto.net/~joepie91/blog/2015/05/04/functional-programming-in-Javascript-map-filter-reduce/)
+courtesy for map, reduce, filter code snippets : [cryto.net](http://cryto.net/~joepie91/blog/2015/05/04/functional-programming-in-javascript-map-filter-reduce/)
 
 
 ## Avoid mutation
