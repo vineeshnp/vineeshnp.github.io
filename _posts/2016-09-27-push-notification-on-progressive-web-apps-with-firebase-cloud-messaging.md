@@ -71,7 +71,7 @@ But if you examine the console, you will get an error like this
 
 
 <figure class="one">
-	<a href="{{site.url}}/images/pwa-notification/first-boot-error.jpg"><img src= "{{site.url}}/images/pwa-notification/first-boot-error.jpg" alt=""></a>
+	<a href="{{site.url}}/images/pwa-notification/first-boot.jpg"><img src= "{{site.url}}/images/pwa-notification/first-boot.jpg" alt=""></a>
 	<figcaption>PWA Boot up</figcaption>
 </figure>
 
