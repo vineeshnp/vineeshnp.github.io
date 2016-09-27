@@ -4,7 +4,7 @@ title: PWA push notification with firebase cloud messaging
 description: " Push notification seems to be a simple activity when we look from a
 distance. As we move closer we understands how complex it is. Lets have a look at how to implement
 push notification in progressive web apps"
-modified: 2016-11-09
+modified: 2016-27-09
 tags: [pwa, progressive-web-apps, push-notification, firebase, gcm]
 image:
   feature: pwa-notification/header.jpg
