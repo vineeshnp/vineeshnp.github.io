@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>NodeJs Presentation</title>
+
+		<meta name="description" content="Javascript on web, mobile, server and desktop">
+		<meta name="author" content="Vineesh N P">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+			@font-face { font-family: elvish; src: url('font/elvish_ring_nfi.ttf'); }
+			.elvishfont {
+			font-family: elvish !important
+			}
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+    <div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+        <section>
+          <a href="#" class="navigate-down">
+            <img  height="150" data-src="./img/node.png" alt="JS Logo">
+          </a>
+          <h1 >NodeJs</h1>
+          <h3 style="font-style:normal ">Absolute Beginiers Guide</h3>
+          <p>
+            <small>by <a href="http://fragmentyard.com">Vineesh N P</a> / <a href="http://twitter.com/vineeshvalsalan">@vineeshvalsalan</a></small>
+          </p>
+        </section>
+				<section data-transition="convex" data-background-transition="concave">
+					<h2>About Me</h2>
+					<p>Vineesh Narikutty Pacha</p>
+					<img src data-src="img/me.jpg" width="300" height="300"/>
+					<p>
+						Software Engineer @ TechJini<br>
+						Former IEEE Associate Member<br>
+						Long drives and Piano
+
+					</p>
+				</section>
+
+          <section data-transition="slide" data-background-transition="concave">
+            <h2>In Short</h2>
+            <p>JS apps which runs outside the scope of browser</p>
+            <p>So node isn't just a php/jsp or *sp replacement</p>
+            <p>There motivation is much more vishionary here</p>
+            <!--<p>Web</p>-->
+          </section>
+
+		<section data-transition="convex" data-background-transition="fade">
+			<h2>Assumptions</h2>
+			<p>You are familiar with fundamentals of JS</p>
+			<h3>You Know basics of</h3>
+			<p>ES6</p>
+			<p>sh</p>
+			<p>Git</p>
+		</section>
+
+		<section>
+			<h2>Installation</h2>
+			<p>Head to https://nodejs.org/en/download/</p>
+			<img data-src="./img/node_install.png" alt="Node Logo">
+			
+		</section>
+
+		<section>
+			<h2>Package Manager</h2>
+			<p>NPM</p>
+			<p>package.json</p>
+			
+		</section>
+
+		<section>
+			<section>
+				<h2>Apache to Node</h2>
+				<h3>Request processing anology</h3>
+				<h3>Non Blocking - Event Driven IO</h3>
+			</section>
+			<section>
+				<h2>Non Blocking - Event Driven IO</h2>
+				<img data-src="./img/event_loop.png" alt="Event Loop">
+				
+			</section>
+		</section>
+
+		<section>
+			<section>
+				<h2>Global Object</h2>
+				<p>In Browser its the window object</p>
+				<pre><code class="hljs">
+var hello = 'Hello World';
+console.log(window.hello);
+//hello world
+
+					</code></pre>
+			</section>
+			<section>
+				<h2>Node has a `global` Object</h2>
+				<p>Any methods defined in global methods are ready to use. i..e we dont have to use `requrie`</p>
+				<br>
+				Few of the global function
+				<pre><code class="hljs">
+console
+exports
+global
+module
+process
+require()
+
+					</code></pre>
+			</section>
+			<section>
+				<h2>Example</h2>
+				<pre><code class="hljs">
+console.log('Aurora') // Aurora 
+var planet = 'Earth'
+console.log(`Hi from ${planet}`) // Hi from Earth
+
+console.log(planet) // Earth
+console.log(global.planet) // undefined, 
+//because each file is treated as a module and var will be associated with that module
+					</code></pre>
+					<aside class="notes">
+						give intro about this ${ }
+					</aside>
+			</section>
+
+			<section>
+				<h2>Example</h2>
+				<pre><code class="hljs">
+console.log(__dirname) // current directories full path 
+console.log(__filename) // current file's full path
+
+//All JS functions are avail on node
+
+var hw = 'Hello World'
+console.log(hw.slice(5)) //world
+
+//require is a function available in global object
+
+var path = require('path')
+
+					</code></pre>
+					<aside class="notes">
+						say that all these function are asign to global object
+					</aside>
+			</section>
+			<section>
+				<h2>Process Obejct</h2>
+				<p>Interact with current process</p>
+			</section>
+			<section>
+				
+				<h2>process.argv object</h2>
+				<pre>
+					<code>
+//arg.js
+console.log(process.argv)
+
+node arg.js
+[ 
+'/usr/bin/nodejs',
+'/home/*****/arg.js' 
+]
+
+node arg.js --name Tesla
+[ 
+'/usr/bin/nodejs',
+'/home/*****/arg.js' ,
+--name ,
+Tesla
+]
+					</code>
+				</pre>
+					<aside class="notes">
+						The argsv will contain <br>
+						* Current node executable <br>
+						* Current working file <br>
+						* Args passed from the terminal  <br>
+						* Show args fetcing example
+					</aside>
+			</section>
+			<section>
+				
+				<h2>process.stdin and process.stdout</h2>
+				<pre>
+					<code>
+process.stdout.write(" Hello World \n")
+process.stdout.write(" Type something \n ")
+
+process.stdin.on('data',function(data){
+	process.stdout.write(`\n You typed : ${data.toString().trim()}` )
+
+	process.exit();
+})
+
+process.on('exit',function(e){
+	process.stdout.write("\n Exiting process \n")
+})
+					</code>
+				</pre>
+					<aside class="notes">
+						* stdout wont include new line<br>
+						* stdin waits untill something has been entered<br>
+						* stdin waits forever untill something has been entered <br>
+						* exit mehod triggers the exit from the forever waiting state
+					</aside>
+			</section>
+			<section>
+				<h2>Other global function</h2>
+				<p>setTimeOut</p>
+				<p>setInterval</p>
+			</section>
+		</section>
+		<section>
+			<section>
+				<h3>require</h3>
+				<pre><code class='hljs'>var foo = require('foo')</code></pre>
+			</section>
+			<section>
+				<p>require is used to load modules from other files/libraries</p>
+				<pre><code class='hljs'>
+var foo = require('foo')
+//any methods defined in foo can be invoked by
+foo.fooFunction();
+
+foo.fooCallBackFunction('params', function(){
+	// if foo is supporting callback
+})
+				</code></pre>
+			</section>	
+		</section>
+		<section data-background-transition="slide">
+			<section>
+				<h3>Interacting with user!</h3>
+				<p>With readLine()
+				</p>
+				<img data-src="./img/terminal_apple2.png" width="50%" height="50%"/>
+			</section>
+			<section>
+				<p>Reading a user input</p>
+				<pre><code class='hljs'>
+var readline = require('readline')
+
+var rl = readline.createInterface(process.stdin, process.stdout)
+
+rl.question('What is your name ?', function(answer){
+	console.log(answer)
+}
+  </code></pre>
+			</section>
+			<section>
+				<p>A working example</p>
+				<pre><code class='hljs'>
+var readline = require('readline')
+//readline is a wraper around stdout and stdin
+var rl = readline.createInterface(process.stdin, process.stdout)
+
+var realPerson = {
+        name: '',
+        sayings : []
+}
+rl.question('What is your name ?', function(answer){
+        realPerson.name = answer;
+
+        rl.setPrompt(`What would ${realPerson.name} say ?`)
+        rl.prompt(); //displays the above prompt
+
+        //this fucntion will be triggered when a new line is entered
+        rl.on('line', function(saying){
+                realPerson.sayings.push(saying)
+                if(saying.toLowerCase().trim() === 'exit'){
+                        rl.close();
+                }else{
+
+                        rl.setPrompt(`What else would ${realPerson.name} say? (Press 'exit' to quit)`)
+                        rl.prompt();
+                }
+        })
+
+
+})
+
+rl.on('close', function(){
+        console.log('%s is saying %j', realPerson.name, realPerson.sayings)
+        process.exit();
+})
+
+				</code></pre>
+			</section>	
+		</section>
+		<section>
+			<section>
+					<h3>Event Emitters</h3>
+					<img data-src="./img/transistor.png" />
+				</section>
+				<section>
+					<h4>We said that nodejs is an event driven languge</h4>
+					<p>Most of the core nodejs api works wrt event-driven methadology</p>
+					<aside class="notes">
+						a net.Server object emits an event each time a peer connects to it; a fs.ReadStream emits an event when the file is opened; a stream emits an event whenever data is available to be read.
+					</aside>
+				</section>
+				<section data-transition="convex" data-background-transition="concave">
+					
+					<ul>
+						<li>All objects that emit events are instances of the <b>EventEmitter</b> class.</li>
+						<li>When the EventEmitter object emits an event, all of the functions attached to that specific event are called synchronously.</li>
+					</ul>
+					<p>lets get into an example</p>
+				</section>
+				<section>
+					<img data-src="img/es6.png" />
+				</section>
+				<section data-transition="concave" data-background-transition="convex">
+					<pre>
+						<code class='hljs' data-trim contenteditable>
+const EventEmitter = require('events');
+
+class MyEmitter extends EventEmitter {}
+
+const myEmitter = new MyEmitter();
+myEmitter.on('event', () => {
+  console.log('an event occurred!');
+});
+myEmitter.emit('event');	
+					</code>
+				</pre>
+					<aside class="notes">
+						`const` means that the identifier can’t be reassigned.<br><br>
+						let allows you to declare variables that are limited in <b>scope to the block</b>, statement, or expression on which it is used. This is unlike the var keyword, 
+						which defines a variable globally, or locally to an entire function regardless of block scope.
+						<br><br>
+						class MyEmitter extends EventEmitter {}
+						<br>we can add our on methods that is to be implemented to MyEmitter in {}
+					</aside>
+				</section>
+				<section>
+					<h3>Passing Arguments</h3>
+					<h4>es6</h4>
+					<pre>
+						<code class="hljs" data-trim contenteditable >
+const myEmitter = new MyEmitter();
+myEmitter.on('event', (a, b) => {
+  console.log(a, b, this);
+  // Prints: a b {}
+});
+myEmitter.emit('event', 'a', 'b');
+						</code>
+					</pre>
+<h4>es5</h4>
+					<pre>
+						<code class="hljs" data-trim contenteditable >
+const myEmitter = new MyEmitter();
+myEmitter.on('event', function(a, b) {
+  console.log(a, b, this);
+});
+myEmitter.emit('event', 'a', 'b');
+						</code>
+					</pre>
+				</section>
+		</section>
+				
+				<section>
+					<h3>JSON Objects</h3>
+					<h4>A moment of silence to XML</h4>
+					<p><pre>
+						<code class="hljs" data-trim contenteditable >
+<
+						</code><pre></p>
+				</section>
+				<section data-transition="convex" data-background-transition="concave">
+					<h2>REST</h2>
+					<h4>representational state transfer</h4>
+					<p>RESTful systems typically communicate over Hypertext Transfer
+						 Protocol (HTTP) with the same HTTP verbs GET, POST, PUT, DELETE,
+						  etc.</p>
+				</section>
+				<section>
+					<h2>noSql</h2>
+					<p>MongoDB, CouchDB,</p>
+					<p>Used for BIG data and real time web apps</p>
+					<p>Collections rather than table</p>
+					<pre><code class="hljs">
+
+
+					</code></pre>
+				</section>
+				<section>
+					<h3>git</h3>
+					<p>What is git?</p>
+					<p>Why git</p>
+					<p>How git works</p>
+				</section>
+
+				<section>
+					<img width="450px" height="700px" data-src="img/js_kumbidi.jpg"/>
+				</section>
+
+				<section data-transition="convex" data-background-transition="concave">
+					<h3>JS for Webapps</h3>
+					<p>jQuery</p>
+					<p>AngularJS</p>
+					<p>ember</p>
+					<p>reactJS</p>
+					<p>phaser</p>
+				</section>
+				<section data-transition="concave" data-background-transition="convex">
+					<h3> Me seeing angularJS for first time</h3>
+					<img width="550px" height="450px" data-src="img/salim_puka.jpg" />
+				</section>
+				<section>
+					<h3>Mobileapps with JS</h3>
+					<p>ionic</p>
+					<p>native script</p>
+					<p>react native</p>
+				</section>
+				<section data-transition="concave" data-background-transition="convex">
+					<h3>Server</h3>
+					<p>What is nodeJS?</p>
+					<p>Why is nodeJS?</p>
+				</section>
+				<section data-transition="concave" data-background-transition="convex">
+					<h3>Desktop</h3>
+					<p>Electron - eg :atom</p>
+					<p>WebKit - eg :intelXDE</p>
+				</section>
+				<section data-transition="convex" data-background-transition="concave">
+					<h3>ES6 and TypeScript</h3>
+					<h4>Class, Inheritance, Types,..<h4>
+				</section>
+				<section data-transition="concave" data-background-transition="convex">
+					<h3>You seeing PHP developers after being Full Stack JS Dev</h3>
+					<img width="550px" height="450px" data-src="img/jagathy_pucham.jpg" />
+				</section>
+				<section data-transition="concave" data-background-transition="convex">
+					<h3>Examples</h3>
+				</section>
+				<section data-transition="convex" data-background-transition="concave">
+					<h3>Why you should learn JS</h3>
+				</section>
+				<section>
+					<h3>And get your dream JOB</h3>
+					<img width="600px" height="450px" data-src="img/sk.jpg" />
+				</section>
+				<section data-transition="convex" data-background-transition="concave">
+					<h3>Thanks to</h3>
+					<p>RACE</p>
+					<p>College</p>
+					<p>IEEE</p>
+					<p>Silicon Labs</p>
+				</section>
+				<section>
+					<h3>മാതാ &nbsp; പിതാ &nbsp; ഗുരുഃ &nbsp; ദൈവം</h3>
+				</section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'zoom', // none/fade/slide/convex/concave/zoom
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+  </body>
+  </html>
