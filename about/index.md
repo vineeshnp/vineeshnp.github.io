@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Vineesh N P
+title: Vineesh Narikutty Pacha
 image:
   feature: abstract-5.jpg
   credit: dargadgetz
@@ -11,7 +11,7 @@ modified: 2016-08-03
 
 A passionate full stack Javascript Developer. Started coding at the age of 14. Cherish what I do. Love’s to explore new possibilities and Solutions. Self learner, Speaker, Traveller and Pianist.
 
-Over 1.3 Years of Industrial experience on full stack JS development. Majority of the time working on NodeJS, AngularJS, MongoDB, ExpressJS and Ionic(Hybrid App Development). In short a git lover, addicted to bash, hooked to docker, fly with vagrant, dive with gulp and sleeps with npm.
+More than 2 Years of Industrial experience on full stack JS development. Majority of the time working on NodeJS, AngularJS, MongoDB, ExpressJS and Ionic(Hybrid App Development). In short a git lover, addicted to bash, hooked to docker, fly with vagrant, dive with gulp and sleeps with npm.
 
 ## As a full stack Javascript developer, Had worked with following technologies.
 
@@ -26,4 +26,8 @@ Over 1.3 Years of Industrial experience on full stack JS development. Majority o
 * gulp scripts
 * git
 
-<div markdown="0"><a href="https://www.github.com/{{ site.owner.github }}" class="btn btn-info">Github repo</a> <a href="https://www.npmjs.com/~vineeshnp" class="btn btn-success">npm repo</a></div>
+<div markdown="0" class='animated fadeInDown'><a href="https://www.github.com/{{ site.owner.github }}" class="btn btn-info">Github repo</a> <a href="https://www.npmjs.com/~vineeshnp" class="btn btn-success">npm repo</a>
+ <a class="btn" target="_blank" href="{{ site.url }}/resume">
+           <i class="fa fa-fw fa-book"></i>&nbsp; Resume
+           </a>
+</div>
