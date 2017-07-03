@@ -390,99 +390,148 @@ myEmitter.emit('event', 'a', 'b');
 					</pre>
 				</section>
 		</section>
-				
-				<section>
-					<h3>JSON Objects</h3>
-					<h4>A moment of silence to XML</h4>
-					<p><pre>
-						<code class="hljs" data-trim contenteditable >
-<
-						</code><pre></p>
-				</section>
-				<section data-transition="convex" data-background-transition="concave">
-					<h2>REST</h2>
-					<h4>representational state transfer</h4>
-					<p>RESTful systems typically communicate over Hypertext Transfer
-						 Protocol (HTTP) with the same HTTP verbs GET, POST, PUT, DELETE,
-						  etc.</p>
+		<section>
+			<section>
+					<h3>Processes</h3>
+					<img data-src="./img/process.png" />
 				</section>
 				<section>
-					<h2>noSql</h2>
-					<p>MongoDB, CouchDB,</p>
-					<p>Used for BIG data and real time web apps</p>
-					<p>Collections rather than table</p>
-					<pre><code class="hljs">
+					<p>Helps to execute external process</p>
+					<p>exec : exicute terminal command in nodejs</p>
+					<p>spawn : made for ongoing process with large amount of data</p>
+					<aside class="notes">
+						spawn and execute is used to create process in nodejs.
+						any apps that can be communicated via terminal can be communicated.
+						with execute we can execute any terminal command in node js;
+						give an example of vs code
+					</aside>
+				</section>
+				<section>
+					<h3>exec</h3>
+					<pre><code class='hljs' data-trim contenteditable>
+const  exec  = require("child_process").exec;
 
+exec('ls'); // exicutes ls on terminal
 
+exec('ls', (err, stdout, stderr) => {
+
+        if(err){
+         throw err
+        }
+
+        console.log(`stdout: ${stdout}`);
+        console.log(`stderr: ${stderr}`);
+})
+
+//outputs the current directory listing
 					</code></pre>
 				</section>
 				<section>
-					<h3>git</h3>
-					<p>What is git?</p>
-					<p>Why git</p>
-					<p>How git works</p>
-				</section>
+					<h3>spawn</h3>
+					<pre><code class='hljs' data-trim contenteditable>
+const spawn = require('child_process').spawn; // loading spawn module from spawn
+const ls = spawn('ls', ['-lh', '/usr']); // ls to list, -lh is parameter to ls and /usr is where its exicuted
 
-				<section>
-					<img width="450px" height="700px" data-src="img/js_kumbidi.jpg"/>
-				</section>
+ls.stdout.on('data', (data) => { //when ever spawn trigger an event stdout 
+  console.log(`stdout: ${data}`);
+});
 
-				<section data-transition="convex" data-background-transition="concave">
-					<h3>JS for Webapps</h3>
-					<p>jQuery</p>
-					<p>AngularJS</p>
-					<p>ember</p>
-					<p>reactJS</p>
-					<p>phaser</p>
+ls.stderr.on('data', (data) => { //during error
+  console.log(`stderr: ${data}`);
+});
+
+ls.on('close', (code) => { //finally
+  console.log(`child process exited with code ${code}`);
+});
+					</code></pre>
+					<aside class="notes">
+						https://www.hacksparrow.com/difference-between-spawn-and-exec-of-node-js-child_process.html
+						>> child_process.exec returns the whole buffer output from the child process.
+						>> child_process.spawn returns an object with stdout and stderr streams. 
+						Thus any process which is gonna return long list or if there is a long interaction going on we should use spawn
+					</aside>
 				</section>
-				<section data-transition="concave" data-background-transition="convex">
-					<h3> Me seeing angularJS for first time</h3>
-					<img width="550px" height="450px" data-src="img/salim_puka.jpg" />
-				</section>
-				<section>
-					<h3>Mobileapps with JS</h3>
-					<p>ionic</p>
-					<p>native script</p>
-					<p>react native</p>
-				</section>
-				<section data-transition="concave" data-background-transition="convex">
-					<h3>Server</h3>
-					<p>What is nodeJS?</p>
-					<p>Why is nodeJS?</p>
-				</section>
-				<section data-transition="concave" data-background-transition="convex">
-					<h3>Desktop</h3>
-					<p>Electron - eg :atom</p>
-					<p>WebKit - eg :intelXDE</p>
-				</section>
-				<section data-transition="convex" data-background-transition="concave">
-					<h3>ES6 and TypeScript</h3>
-					<h4>Class, Inheritance, Types,..<h4>
-				</section>
-				<section data-transition="concave" data-background-transition="convex">
-					<h3>You seeing PHP developers after being Full Stack JS Dev</h3>
-					<img width="550px" height="450px" data-src="img/jagathy_pucham.jpg" />
-				</section>
-				<section data-transition="concave" data-background-transition="convex">
-					<h3>Examples</h3>
-				</section>
-				<section data-transition="convex" data-background-transition="concave">
-					<h3>Why you should learn JS</h3>
+		</section>
+
+		<section>
+			<section>
+					<h3>File System Interaction</h3>
+					<img data-src="./img/fs.png" />
 				</section>
 				<section>
-					<h3>And get your dream JOB</h3>
-					<img width="600px" height="450px" data-src="img/sk.jpg" />
-				</section>
-				<section data-transition="convex" data-background-transition="concave">
-					<h3>Thanks to</h3>
-					<p>RACE</p>
-					<p>College</p>
-					<p>IEEE</p>
-					<p>Silicon Labs</p>
+					<p>Inbuilt library with NodeJS</p>
+					<p>Creating, Listing, Read,... files and directories</p>
+					<aside class="notes">
+						Compared to child_process, this is tightly coupled to node.
+					</aside>
 				</section>
 				<section>
-					<h3>മാതാ &nbsp; പിതാ &nbsp; ഗുരുഃ &nbsp; ദൈവം</h3>
+					<h3>Reading a Directory</h3>
+					<pre><code class='hljs' data-trim contenteditable>
+var fs = require('fs');
+
+var files = fs.readdirSync('/var'); //read contents synchronously with a blocking request
+
+console.log(files);
+
+//Displays an array, which contains files of the directory
+
+
+					</code></pre>
+					<aside class="notes">
+					>> Files will have extensions, where as directories wont
+					</aside>
 				</section>
+				<section>
+					<h3>Doing Async List</h3>
+					<pre><code class='hljs' data-trim contenteditable>
+// Doing async
+
+fs.readdir('/home', (err, files) => {
+    if (err){
+        throw err;
+    }
+
+    console.log('/home =>',files)
+})
+					</code></pre>
+					<aside class="notes">
+					>> Async is to be used when we are running the app, to make use of nodeJS event driven approch
+					>> Sync can be used during initialisation
+					</aside>
+				</section>
+				<section>
+					<h3>Read File</h3>
+					<p></p>
+					<pre><code class='hljs' data-trim contenteditable>
+var fs = require('fs');
+var contents = fs.readFileSync("list.js", "UTF-8")
+console.log(contents);
+
+//Doing async
+
+fs.readFile('list.js', 'UTF-8' ,(err, files) => {
+    if (err){
+        throw err;
+    }
+    console.log('list.js =>',files)
+})
+console.log('Reading Files...')
+					</code></pre>
+					<aside class="notes">
+					>> Can read binary or text
+					>> If we are reading text, we have to pass parameter UtF8, which is a text encoding format
+					>> By default it will read as binary and returns a node buffer object
+					</aside>
+				</section>
+		</section>
+		
+		<section data-transition="convex" data-background-transition="concave">
+			<h2>Thanks</h2>
+		</section>
+		<section>
+			<h3>മാതാ &nbsp; പിതാ &nbsp; ഗുരുഃ &nbsp; ദൈവം</h3>
+		</section>
 
       </div>
     </div>
