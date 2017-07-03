@@ -524,8 +524,82 @@ console.log('Reading Files...')
 					>> By default it will read as binary and returns a node buffer object
 					</aside>
 				</section>
+				<section>
+					<h3>FS Can also Write, Move, Delete,... files</h3>
+					<p></p>
+					</code></pre>
+					<aside class="notes">
+					</aside>
+				</section>
 		</section>
-		
+
+		<section>
+			<section>
+					<h3>Streams</h3>
+					<img data-src="./img/stream.jpg" width="30%" height="30%" />
+				</section>
+				<section>
+					<p>Where data flows</p>
+					<p>Streams can be readable, writable or Duplex</p>
+					<aside class="notes">
+						>> Understanding how streams work will help us improve large chunks of data
+						>> we have already used streams in process.stdout and process.stdin
+						>> streams can work with binary data or text encoded data
+					</aside>
+				</section>
+				<section>
+					<h3>Why stream?</h3>
+					<p>lets take an example without stream</p>
+					<pre><code class='hljs' data-trim contenteditable>
+var fs = require('fs')
+
+fs.readFile('./chat.log', 'UTF-8', (err, chatLog) => { 
+    //the entire contents of the files is written to chatLog variable :o
+    console.log(`${chatLog.length}`); 
+})
+console.log(`Reading the file stream`);
+					</code></pre>
+					<aside class="notes">
+					>> Since the entire content of the file is stored to chatLog, its hard to scale up
+					</aside>
+				</section>
+				<section>
+					<h3>Using read stream</h3>
+					<pre><code class='hljs' data-trim contenteditable>
+var stream = fs.createReadStream('./chat.log', 'UTF-8')
+//now data will be flowing as chunks to the stream variable
+
+var data = "";
+
+stream.once('data', () => {
+    process.stdout.write(`  Started writing the data \n`)
+})
+
+stream.on('data', (chunk) => { //when the data event is raised, we have a small chunk of that file
+    process.stdout.write(`  chunk: ${chunk.length} |`)
+    data += chunk;
+})
+
+stream.on('end', () => {
+    console.log(`Stream has ended reading the file.`);
+    console.log(data.length);
+})
+					</code></pre>
+					<aside class ="notes">
+					>> run the example and show
+					</aside>
+				</section>
+				<section>
+					<h3>Write Stream</h3>
+					<p></p>
+					<pre><code class='hljs' data-trim contenteditable>
+var stream= fs.createWriteStream();
+//can be used to send writable stream
+					</code></pre>
+					<aside class="notes">
+					</aside>
+				</section>
+		</section>
 		<section data-transition="convex" data-background-transition="concave">
 			<h2>Thanks</h2>
 		</section>
