@@ -54,10 +54,10 @@
           <h1 >NodeJs</h1>
           <h3 style="font-style:normal ">Absolute Beginiers Guide</h3>
           <p>
-            <small>by <a href="http://fragmentyard.com">Vineesh N P</a> / <a href="http://twitter.com/vineeshvalsalan">@vineeshvalsalan</a></small>
+            <small>by <a href="http://vineeshnp.com">Vineesh N P</a> / <a href="http://twitter.com/vineeshvalsalan">@vineeshvalsalan</a></small>
           </p>
         </section>
-				<section data-transition="convex" data-background-transition="concave">
+				<!--<section data-transition="convex" data-background-transition="concave">
 					<h2>About Me</h2>
 					<p>Vineesh Narikutty Pacha</p>
 					<img src data-src="img/me.jpg" width="300" height="300"/>
@@ -67,13 +67,26 @@
 						Long drives and Piano
 
 					</p>
-				</section>
+				</section>-->
+		  <section data-transition="convex" data-background-transition="concave">
+			<h3>Lets explore!</h3>
+			<ul>
+				<li>NodeJs</li>
+				<li>v8</li>
+				<li>libuv</li>
+			</ul>
+			<aside class="notes">
+				>> v8 was part of chromium project
+			<br>>> took that to chrome
+			<br>>> then over to server side	
+			</aside>
+		  </section>
 
           <section data-transition="slide" data-background-transition="concave">
             <h2>In Short</h2>
             <p>JS apps which runs outside the scope of browser</p>
             <p>So node isn't just a php/jsp or *sp replacement</p>
-            <p>There motivation is much more vishionary here</p>
+            <p>There motivation is much more implicit here</p>
             <!--<p>Web</p>-->
           </section>
 
@@ -97,7 +110,11 @@
 			<h2>Package Manager</h2>
 			<p>NPM</p>
 			<p>package.json</p>
-			
+			<aside class='notes'>
+				>> explain what is NPM
+			<br>>> how npm is used
+			<br>>> npm alternative	
+			</aside>
 		</section>
 
 		<section>
@@ -105,6 +122,10 @@
 				<h2>Apache to Node</h2>
 				<h3>Request processing anology</h3>
 				<h3>Non Blocking - Event Driven IO</h3>
+				<aside class='notes'>
+					>> Explain how a request is handler in apache
+					>> 1 request 1 thread anology
+				</aside>
 			</section>
 			<section>
 				<h2>Non Blocking - Event Driven IO</h2>
@@ -600,11 +621,139 @@ var stream= fs.createWriteStream();
 					</aside>
 				</section>
 		</section>
+
+		<section>
+			<section>
+					<h3>HTTP Module</h3>
+					<img data-src="./img/http.png" width="70%" height="70%" />
+				</section>
+				<section>
+					<p>Used to read contents from another server using http</p>
+					<p>Could be used with REST api's</p>
+					<p></p>
+					<aside class="notes">
+						>>  https module needs certificates to be provided
+					</aside>
+				</section>
+				<section>
+					<h3>HTTP request</h3>
+					<pre><code class='hljs' data-trim contenteditable>
+var https = require('https');
+var fs = require('fs');
+
+var options = {
+    hostname : 'google.com',
+    port : 443,
+    path : '',
+    method : 'GET'
+}
+
+let req = https.request(options, (res) => {
+            // response come as a stream
+
+            let responseBody = ""
+            console.log('Response from started ');
+            console.log('Server status :', res.statusCode);
+            console.log('Response headers %j', res.headers); //%j will display as json
+            //by default the encoding will be binary, lets make it UTF-8
+
+            res.setEncoding('UTF-8')
+
+            //for the first time we can log the data
+            res.once('data', (chunk) =>{
+                console.log(chunk);
+            })
+
+            //on any data we recive
+            res.on('data', (chunk) => {
+                console.log(chunk.length);
+                responseBody += chunk
+            })
+
+            res.on('end', () =>{
+                fs.writeFile('file.html', responseBody, (err)=>{
+                    if(err){
+                        throw err
+                    }
+                    console.log('File writing completed');
+                })
+            })
+        })
+
+    req.on('error', (err) =>{
+        throw err
+    })
+
+    //we are closing the request
+    req.end();
+        
+					</code></pre>
+					<aside class="notes">
+					>> response come as a stream, chunk of data
+					>> by default the encoding will be binary, lets make it UTF-8
+					>> explain opening the file
+					</aside>
+				</section>
+				<section>
+					<h3>Servers?</h3>
+					<img data-src="./img/server.svg" width="20%" height="20%" />
+					<p>You may be wondering, how we are gonna run a server in node!</p>
+					<p>With http module we could create a smiple server</p>
+					<p>lets see how it goes!</p>
+					
+				</section>
+				<section>
+					<h3>HTTP Server</h3>
+					<p></p>
+					<pre><code class='hljs' data-trim contenteditable>
+var http = require('http');
+
+//#1
+var server = http.createServer(function(req, res){
+    //#2
+
+    res.writeHead(200, {'Content-Type' : 'text/plain'}) 
+    //#3
+
+    res.end('Hello World'); //#4
+});  
+
+//lets say server what ip and port it should listen to
+server.listen(8080);
+
+console.log('Server is listening on port 8080');
+					</code></pre>
+					<aside class="notes">
+						<br>#1
+						<br>>> every time we make call to this server, the callback if the createServer will be initiated
+						<br>#2
+						<br>>> request obeject contains all the information about request like headers, data params, etc
+						<br>>> res is the object that we returns back
+						<br>>> any data that need to get back to user, is handled by res
+						<br>#3
+						<br>>> complete the response header
+						<br>>> first we write the status code, 200
+						<br>>> second argument contains all the other headers
+						<br>>> content type says what sort of object we are responding with
+						<br>#4
+						<br>>> this will send the data
+    					<br>>> res.send could also be used
+					</aside>
+				</section>
+		</section>
 		<section data-transition="convex" data-background-transition="concave">
-			<h2>Thanks</h2>
+			
+			<h3>മാതാ &nbsp; പിതാ &nbsp; ഗുരുഃ &nbsp; ദൈവം</h3>
+			<h3>Thanks</h3>
+			<ul>
+				<li>Lynda</li>
+				<li>Youtube</li>
+				<li>NodeJS Docs</li>
+				<li>Stackoverflow</li>
+			</ul>
 		</section>
 		<section>
-			<h3>മാതാ &nbsp; പിതാ &nbsp; ഗുരുഃ &nbsp; ദൈവം</h3>
+			
 		</section>
 
       </div>
