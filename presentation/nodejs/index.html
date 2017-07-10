@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -82,7 +82,7 @@
 			</aside>
 		  </section>
 
-          <section data-transition="slide" data-background-transition="concave">
+          <section data-transition="zoom" data-background-transition="concave">
             <h2>In Short</h2>
             <p>JS apps which runs outside the scope of browser</p>
             <p>So node isn't just a php/jsp or *sp replacement</p>
@@ -90,7 +90,7 @@
             <!--<p>Web</p>-->
           </section>
 
-		<section data-transition="convex" data-background-transition="fade">
+		<section data-transition="convex" data-background-transition="zoom">
 			<h2>Assumptions</h2>
 			<p>You are familiar with fundamentals of JS</p>
 			<h3>You Know basics of</h3>
@@ -99,14 +99,14 @@
 			<p>Git</p>
 		</section>
 
-		<section>
+		<section data-transition="concave" data-background-transition="zoom">
 			<h2>Installation</h2>
 			<p>Head to https://nodejs.org/en/download/</p>
 			<img data-src="./img/node_install.png" alt="Node Logo">
 			
 		</section>
 
-		<section>
+		<section data-transition="convex" data-background-transition="concave">
 			<h2>Package Manager</h2>
 			<p>NPM</p>
 			<p>package.json</p>
@@ -117,8 +117,8 @@
 			</aside>
 		</section>
 
-		<section>
-			<section>
+		<section data-transition="convex" data-background-transition="convex">
+			<section data-transition="convex" data-background-transition="zoom">
 				<h2>Apache to Node</h2>
 				<h3>Request processing anology</h3>
 				<h3>Non Blocking - Event Driven IO</h3>
@@ -127,7 +127,7 @@
 					>> 1 request 1 thread anology
 				</aside>
 			</section>
-			<section>
+			<section data-transition="convex" data-background-transition="concave">
 				<h2>Non Blocking - Event Driven IO</h2>
 				<img data-src="./img/event_loop.png" alt="Event Loop">
 				
@@ -264,11 +264,11 @@ process.on('exit',function(e){
 			</section>
 		</section>
 		<section>
-			<section>
+			<section data-transition="convex" data-background-transition="zoom">
 				<h3>require</h3>
 				<pre><code class='hljs'>var foo = require('foo')</code></pre>
 			</section>
-			<section>
+			<section data-transition="zoom" data-background-transition="convex">
 				<p>require is used to load modules from other files/libraries</p>
 				<pre><code class='hljs'>
 var foo = require('foo')
@@ -282,13 +282,13 @@ foo.fooCallBackFunction('params', function(){
 			</section>	
 		</section>
 		<section data-background-transition="slide">
-			<section>
+			<section data-transition="fade" data-background-transition="zoom">
 				<h3>Interacting with user!</h3>
 				<p>With readLine()
 				</p>
 				<img data-src="./img/terminal_apple2.png" width="50%" height="50%"/>
 			</section>
-			<section>
+			<section data-transition="fade" data-background-transition="zoom">
 				<p>Reading a user input</p>
 				<pre><code class='hljs'>
 var readline = require('readline')
@@ -300,7 +300,7 @@ rl.question('What is your name ?', function(answer){
 }
   </code></pre>
 			</section>
-			<section>
+			<section data-transition="fade" data-background-transition="zoom">
 				<p>A working example</p>
 				<pre><code class='hljs'>
 var readline = require('readline')
@@ -475,18 +475,18 @@ ls.on('close', (code) => { //finally
 		</section>
 
 		<section>
-			<section>
+			<section data-transition="convex" data-background-transition="concave">
 					<h3>File System Interaction</h3>
 					<img data-src="./img/fs.png" />
 				</section>
-				<section>
+				<section data-transition="convex" data-background-transition="concave">
 					<p>Inbuilt library with NodeJS</p>
 					<p>Creating, Listing, Read,... files and directories</p>
 					<aside class="notes">
 						Compared to child_process, this is tightly coupled to node.
 					</aside>
 				</section>
-				<section>
+				<section data-transition="convex" data-background-transition="concave">
 					<h3>Reading a Directory</h3>
 					<pre><code class='hljs' data-trim contenteditable>
 var fs = require('fs');
@@ -503,7 +503,7 @@ console.log(files);
 					>> Files will have extensions, where as directories wont
 					</aside>
 				</section>
-				<section>
+				<section data-transition="convex" data-background-transition="concave">
 					<h3>Doing Async List</h3>
 					<pre><code class='hljs' data-trim contenteditable>
 // Doing async
@@ -521,7 +521,7 @@ fs.readdir('/home', (err, files) => {
 					>> Sync can be used during initialisation
 					</aside>
 				</section>
-				<section>
+				<section data-transition="convex" data-background-transition="concave">
 					<h3>Read File</h3>
 					<p></p>
 					<pre><code class='hljs' data-trim contenteditable>
@@ -545,7 +545,7 @@ console.log('Reading Files...')
 					>> By default it will read as binary and returns a node buffer object
 					</aside>
 				</section>
-				<section>
+				<section data-transition="convex" data-background-transition="concave">
 					<h3>FS Can also Write, Move, Delete,... files</h3>
 					<p></p>
 					</code></pre>
@@ -555,11 +555,11 @@ console.log('Reading Files...')
 		</section>
 
 		<section>
-			<section>
+			<section data-transition="concave" data-background-transition="convex">
 					<h3>Streams</h3>
 					<img data-src="./img/stream.jpg" width="30%" height="30%" />
 				</section>
-				<section>
+				<section data-transition="concave" data-background-transition="convex"> 
 					<p>Where data flows</p>
 					<p>Streams can be readable, writable or Duplex</p>
 					<aside class="notes">
@@ -568,7 +568,7 @@ console.log('Reading Files...')
 						>> streams can work with binary data or text encoded data
 					</aside>
 				</section>
-				<section>
+				<section data-transition="concave" data-background-transition="convex">
 					<h3>Why stream?</h3>
 					<p>lets take an example without stream</p>
 					<pre><code class='hljs' data-trim contenteditable>
@@ -584,7 +584,7 @@ console.log(`Reading the file stream`);
 					>> Since the entire content of the file is stored to chatLog, its hard to scale up
 					</aside>
 				</section>
-				<section>
+				<section data-transition="concave" data-background-transition="convex">
 					<h3>Using read stream</h3>
 					<pre><code class='hljs' data-trim contenteditable>
 var stream = fs.createReadStream('./chat.log', 'UTF-8')
@@ -610,7 +610,7 @@ stream.on('end', () => {
 					>> run the example and show
 					</aside>
 				</section>
-				<section>
+				<section data-transition="concave" data-background-transition="convex">
 					<h3>Write Stream</h3>
 					<p></p>
 					<pre><code class='hljs' data-trim contenteditable>
@@ -751,9 +751,6 @@ console.log('Server is listening on port 8080');
 				<li>NodeJS Docs</li>
 				<li>Stackoverflow</li>
 			</ul>
-		</section>
-		<section>
-			
 		</section>
 
       </div>
