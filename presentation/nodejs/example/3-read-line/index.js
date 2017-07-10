@@ -1,5 +1,6 @@
 var readline = require('readline')
 //readline is a wraper around stdout and stdin
+//we are doing this because, input and output stream could be anything, even punch card :D
 var rl = readline.createInterface(process.stdin, process.stdout)
 
 var realPerson = {

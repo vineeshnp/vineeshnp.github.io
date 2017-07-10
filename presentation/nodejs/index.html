@@ -53,7 +53,7 @@
             <img  height="150" data-src="./img/node.png" alt="JS Logo">
           </a>
           <h1 >NodeJs</h1>
-          <h3 style="font-style:normal ">Absolute Beginiers Guide</h3>
+          <h3 style="font-style:normal ">Absolute Fundamentals</h3>
           <p>
             <small>by <a href="http://vineeshnp.com">Vineesh N P</a> / <a href="http://twitter.com/vineeshvalsalan">@vineeshvalsalan</a></small>
           </p>
@@ -93,14 +93,7 @@
 			</aside>
 		  </section>
 
-		<section data-transition="convex" data-background-transition="zoom">
-			<h2>Assumptions</h2>
-			<p>You are familiar with fundamentals of JS</p>
-			<h3>You Know basics of</h3>
-			<p>ES6</p>
-			<p>sh</p>
-			<p>Git</p>
-		</section>
+		
 
 		<section data-transition="concave" data-background-transition="zoom">
 			<h2>Installation</h2>
@@ -201,6 +194,7 @@ var path = require('path')
 			</section>
 			<section>
 				<h2>Process Obejct</h2>
+				<p>Give info of current process</p>
 				<p>Interact with current process</p>
 			</section>
 			<section>
@@ -254,6 +248,9 @@ process.on('exit',function(e){
 					</code>
 				</pre>
 					<aside class="notes">
+						>> When we type something, keyboard is communicating to the process <br>
+						>> we will see how to read and write data to terminal <br>
+						>> Its all binary data flow<br>
 						* stdout wont include new line<br>
 						* stdin waits untill something has been entered<br>
 						* stdin waits forever untill something has been entered <br>
@@ -302,6 +299,9 @@ rl.question('What is your name ?', function(answer){
 	console.log(answer)
 }
   </code></pre>
+  			<aside class='notes'>
+				>> readLine create interface is called, to provide where we will output data
+			</aside>
 			</section>
 			<section data-transition="fade" data-background-transition="zoom">
 				<p>A working example</p>
@@ -391,6 +391,17 @@ myEmitter.emit('event');
 				</section>
 				<section>
 					<h3>Passing Arguments</h3>
+
+<h4>es5</h4>
+					<pre>
+						<code class="hljs" data-trim contenteditable >
+const myEmitter = new MyEmitter();
+myEmitter.on('event', function(a, b) {
+  console.log(a, b, this);
+});
+myEmitter.emit('event', 'a', 'b');
+						</code>
+					</pre>
 					<h4>es6</h4>
 					<pre>
 						<code class="hljs" data-trim contenteditable >
@@ -402,26 +413,16 @@ myEmitter.on('event', (a, b) => {
 myEmitter.emit('event', 'a', 'b');
 						</code>
 					</pre>
-<h4>es5</h4>
-					<pre>
-						<code class="hljs" data-trim contenteditable >
-const myEmitter = new MyEmitter();
-myEmitter.on('event', function(a, b) {
-  console.log(a, b, this);
-});
-myEmitter.emit('event', 'a', 'b');
-						</code>
-					</pre>
 				</section>
 		</section>
 		<section>
 			<section>
-					<h3>Processes</h3>
-					<img data-src="./img/process.png" />
+					<h3>Child Processes</h3>
+					<img data-src="./img/process.jpg" />
 				</section>
 				<section>
 					<p>Helps to execute external process</p>
-					<p>exec : exicute terminal command in nodejs</p>
+					<p>exec : execute terminal command in nodejs</p>
 					<p>spawn : made for ongoing process with large amount of data</p>
 					<aside class="notes">
 						spawn and execute is used to create process in nodejs.
@@ -470,9 +471,12 @@ ls.on('close', (code) => { //finally
 					</code></pre>
 					<aside class="notes">
 						https://www.hacksparrow.com/difference-between-spawn-and-exec-of-node-js-child_process.html
-						>> child_process.exec returns the whole buffer output from the child process.
-						>> child_process.spawn returns an object with stdout and stderr streams. 
-						Thus any process which is gonna return long list or if there is a long interaction going on we should use spawn
+						<br>>> child_process.exec returns the whole buffer output from the child process.
+						<br>>> child_process.spawn returns an object with stdout and stderr streams. 
+						<br>Thus any process which is gonna return long list or if there is a long interaction going on we should use spawn
+						<br> # <code class='hljs' data-trim contenteditable>child.on('error', function(err) {
+							console.log(err);
+						});</code>
 					</aside>
 				</section>
 		</section>
