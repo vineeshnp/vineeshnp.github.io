@@ -25,7 +25,7 @@ angular.module('Resume', ['ngMaterial'])
       <h1 class="page-title page-title-last">{{r.lastName}}</h1>
     </div>
     <div class="header-icons">
-      <a ng-if="r.website" class="md-subhead page-subhead" ng-href="https://{{r.website}}" target="_blank">
+      <a ng-if="r.website" class="md-subhead page-subhead" ng-href="http://{{r.website}}" target="_blank">
         <i class="fa fa-lg fa-code"></i>{{r.website}}
       </a>
       <span ng-if="r.phone" class="md-subhead page-subhead">
