@@ -5,9 +5,8 @@ description: " Push notification seems to be a simple activity when we look from
 distance. As we move closer we understands how complex it is. Lets have a look at how to implement
 push notification in progressive web apps"
 modified: 2016-27-09
+bigimg: /img/posts/pwa-notification/header.jpg
 tags: [pwa, progressive-web-apps, push-notification, firebase, gcm]
-image:
-  feature: pwa-notification/header.jpg
 
 ---
 
@@ -71,7 +70,7 @@ But if you examine the console, you will get an error like this
 
 
 <figure class="one">
-	<a href="{{site.url}}/images/pwa-notification/first-boot.jpg"><img src= "{{site.url}}/images/pwa-notification/first-boot.jpg" alt=""></a>
+	<a href="{{site.url}}/img/posts/pwa-notification/first-boot.jpg"><img src= "{{site.url}}/img/posts/pwa-notification/first-boot.jpg" alt=""></a>
 	<figcaption>PWA Boot up</figcaption>
 </figure>
 

@@ -2,9 +2,8 @@
 layout: post
 title: "MEAN Stack on top of Vagrant"
 description: "A hassle free way to setup MEAN stack environment."
+bigimg: /img/posts/meanstack-vagrant/header.jpg
 tags: [MEAN Stack, Javascript, Vagrant, Mongo, Angular, blog]
-image:
-  feature: meanstack_vagrant/header.jpg
 
 ---
 

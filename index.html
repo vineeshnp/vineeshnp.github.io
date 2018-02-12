@@ -1,73 +1,72 @@
 ---
-layout: post-index
-title: A Learner!
-description: "a place where I express my views, opinions are strictly personal."
-tags: [vineesh narikutty pacha,personal, blog]
-comments: false
-animatedheader: true
-image:
-  feature: background01.jpg
+layout: page
+title: Vineesh N P
+subtitle: Learner,...
+use-site-title: true
 ---
 
-<article>
-    <a href="{{ site.url }}/images/circle_logo.jpg">
-      <img src="{{ site.url }}/images/circle_logo.jpg"  class="animated bounceIn fadeIn circleImage">
+<div class="posts-list">
+  {% for post in paginator.posts %}
+  <article class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+	  <h2 class="post-title">{{ post.title }}</h2>
+
+	  {% if post.subtitle %}
+	  <h3 class="post-subtitle">
+	    {{ post.subtitle }}
+	  </h3>
+	  {% endif %}
     </a>
-    <h3 class="animated fadeInDown">
-        <a href="{{ site.url }}">
-        	<p style="font-size:1.2rem;font-weight:300">{{ site.owner.bio }}</p>
+
+    <p class="post-meta">
+      Posted on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+
+    <div class="post-entry-container">
+      {% if post.image %}
+      <div class="post-image">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <img src="{{ post.image }}">
         </a>
-    </h3>
-    <hr class="hr-line animated fadeInDown">
-    <h3 class="header-title-wrap">
-           <a class="btn animated fadeInDown" href="{{ site.url }}/about">
-           <i class="fa fa-fw fa-user"></i>&nbsp; About
-           </a>
-           <a class="btn animated fadeInDown" href="{{ site.url }}/posts">
-           <i class="fa fa-fw fa-pencil"></i>&nbsp; Posts
-           </a>
-           <a class="btn animated fadeInDown" href="{{ site.url }}/projects">
-           <i class="fa fa-fw fa-laptop"></i>&nbsp; Projects
-           </a>
-          <a href="https://twitter.com/{{ site.owner.twitter }}" target='_blank'  class='btn animated fadeInDown'>
-            <i class="fa fa-fw fa-twitter"></i>&nbsp; Twitter
-          </a>
-          <a href="https://linkedin.com/in/{{ site.owner.linkedin }}" target='_blank' class='btn animated fadeInDown'>
-            <i class="fa fa-fw fa-linkedin"></i>&nbsp; LinkedIn
-          </a>
-          <a class="btn animated fadeInDown" target="_blank" href="{{ site.url }}/resume">
-           <i class="fa fa-fw fa-book"></i>&nbsp; Resume
-           </a>
-      </h3>
-</article>
-
-{% for post in paginator.posts %}
-<article class="hentry">
-  <header>
-    {% if post.image.feature %}
-      <div class="entry-image-index">
-        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}"></a>
-      </div><!-- /.entry-image -->
-    {% endif %}
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
-      {% if site.reading_time %}
-      <span class="entry-reading-time">
-        <i class="fa fa-clock-o"></i>
-        {% include read-time-index.html %}
-      </span><!-- /.entry-reading-time -->
+      </div>
       {% endif %}
-    </div><!-- /.entry-meta -->
-    {% if post.link %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
-    {% else %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
-    {% endif %}
-  </header>
-  <div class="entry-content">
-    {{ post.content }}
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-{% endfor %}
+      <div class="post-entry">
+        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
+        {% assign excerpt_word_count = post.excerpt | number_of_words %}
+        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+        {% endif %}
+      </div>
+    </div>
 
-{% include pagination.html %}
+    {% if post.tags.size > 0 %}
+    <div class="blog-tags">
+      Tags:
+      {% if site.link-tags %}
+      {% for tag in post.tags %}
+      <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
+      {% endfor %}
+      {% else %}
+        {{ post.tags | join: ", " }}
+      {% endif %}
+    </div>
+    {% endif %}
+
+   </article>
+  {% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+<ul class="pager main-pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}

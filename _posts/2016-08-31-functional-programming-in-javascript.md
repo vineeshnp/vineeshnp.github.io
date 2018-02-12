@@ -1,9 +1,7 @@
 ---
 layout: post
 title: "Functional programming in Javascript"
-description: "a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. Here we are trying
-that with Javascript"
-tags: [Javascript, functional-programming, blog]
+tags: [javascript, functional-programming]
 
 ---
 >In computer science, functional programming is a programming paradigm—a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data - wikipedia.org

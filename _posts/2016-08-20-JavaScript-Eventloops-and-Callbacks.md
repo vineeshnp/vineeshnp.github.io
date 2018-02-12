@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Eventloops and callbacks in javascript.
-description: "A simple explanation of javascript eventloop"
 modified: 2016-08-20
-tags: [javascript, v8, nodejs, eventloop, callbacks]
+tags: [javascript, v8, nodejs, event-loop, callbacks]
 
 ---
 
@@ -123,7 +122,7 @@ Whenever a callback function is executed, it wont block further execution of the
 
 You can think eventloop as a queue.
 <figure class="one">
-	<a href="{{site.url}}/images/event_loops/eventloop01.jpg"><img src= "{{site.url}}/images/event_loops/eventloop01.jpg" alt=""></a>
+	<a href="{{site.url}}/img/posts/event-loops/eventloop01.jpg"><img src= "{{site.url}}/img/posts/event-loops/eventloop01.jpg" alt=""></a>
 	<figcaption>Event Loop</figcaption>
 </figure>
 
