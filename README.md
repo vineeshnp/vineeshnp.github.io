@@ -1,11 +1,6 @@
-# Personal blog and website
+# Personal home page
 
-##Vineesh Narikutty Pacha
+Source code of my homepage.
 
-This is the source of my personal website written with jekyll for ruby.
+Forked from [https://github.com/daattali/beautiful-jekyll#readme](https://github.com/daattali/beautiful-jekyll#readme)
 
-**Thanks**
-
-
-
----

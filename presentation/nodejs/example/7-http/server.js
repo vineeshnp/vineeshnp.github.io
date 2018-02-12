@@ -14,6 +14,7 @@ var server = http.createServer(function(req, res){
     // content type says what sort of object we are responding with
 
     res.end('Hello World');
+    console.log('We have a visitor;');
     //this will send the data
     // res.send could also be used
 });  

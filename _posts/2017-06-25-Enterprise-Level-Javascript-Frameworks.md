@@ -2,9 +2,8 @@
 layout: post
 title: "Enterprise level javascript frameworks"
 description: "When it comes to an application of substantial magnitude, angular, react and ember might not be a best solution. There is much more in the industry besides these eye-candy toys"
+bigimg: /img/posts/enterprise-js-frameworks/header.jpeg
 tags: [Javascript, Enterprise, Frameworks]
-image:
-  feature: enterprise-js-frameworks/header.jpeg
 
 ---
 >When it comes to an application of substantial magnitude, angular, react and ember might not be a best solution. There is much more in the industry besides these eye-candy toys. Some applications are built and meant to run for decades. Scalability and maintainability is as cardinal as usability here. 
@@ -93,7 +92,7 @@ Lets create `helloworld.html` next to `helloworld.js`
 ## Open the helloworld.html in browser
 
 <figure class="one">
-	<a href="{{site.url}}/images/enterprise-js-frameworks/helloworld-closure.png"><img src= "{{site.url}}/images/enterprise-js-frameworks/helloworld-closure.png" alt=""></a>
+	<a href="{{site.url}}/img/posts/enterprise-js-frameworks/helloworld-closure.png"><img src= "{{site.url}}/img/posts/enterprise-js-frameworks/helloworld-closure.png" alt=""></a>
 	<figcaption>helloworld.html</figcaption>
 </figure>
 

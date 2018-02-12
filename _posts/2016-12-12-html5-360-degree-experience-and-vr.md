@@ -3,9 +3,8 @@ layout: post
 title: Virtual Reality on HTML5
 description: " Virtual Reality is on its way to future. It gives us experience of greater magnitude. We can take a look at how html5 can incorporate VR experience"
 modified: 2016-12-12
+bigimg : /img/posts/krpano/header.jpg
 tags: [virtual-reality, krpano, html5 ]
-image:
-  feature: krpano/header.jpg
 
 ---
 

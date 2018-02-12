@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-var contents = fs.readFileSync("list.js", "UTF-8")
+var contents = fs.readFileSync("list.js")
 
 console.log(contents);
 

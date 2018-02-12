@@ -1,10 +1,10 @@
 var fs = require('fs')
 
-fs.readFile('./chat.log', 'UTF-8', (err, chatLog) => { 
-    //the entire contents of the files is written to chatLog variable :o
-    console.log(`${chatLog.length}`); 
-})
-console.log(`Reading the file stream`);
+// fs.readFile('./chat.log', 'UTF-8', (err, chatLog) => { 
+//     //the entire contents of the files is written to chatLog variable :o
+//     console.log(`${chatLog.length}`); 
+// })
+// console.log(`Reading the file stream`);
 
 //with stream
 var stream = fs.createReadStream('./chat.log', 'UTF-8')

@@ -3,12 +3,9 @@ layout: post
 title: "Machine Learning
 & Data Sciences
 Conference."
-description: "Our experience at Microsoft Machine Learning & Data Sciences Conference."
+subtitle: "Our experience at Microsoft Machine Learning & Data Sciences Conference."
+bigimg : /img/posts/india-ml-meet/parabola.jpg
 tags: [IndiaMLMeet, Microsoft, Techjini]
-image:
-  feature: IndiaMLMeet/parabola.jpg
-  credit: Vineesh N P
-  creditlink: https://www.twitter.com/vineeshvalsalan/
 
 ---
 
@@ -39,8 +36,8 @@ Upon registration Microsoft provided basic booklet, pen, food coupon, etc... jus
 saying, the quality of everything was impressive. And we headed towards the top floor, called Botania. Breakfast was served there.
 
 <figure class="half">
-	<a href="{{site.url}}/images/IndiaMLMeet/presentation01.jpg"><img src="{{site.url}}/images/IndiaMLMeet/presentation01.jpg" alt=""></a>
-	<a href="{{site.url}}/images/IndiaMLMeet/presentation02.jpg"><img src="{{site.url}}/images/IndiaMLMeet/presentation02.jpg" alt=""></a>
+	<a href="{{site.url}}/img/posts/india-ml-meet/presentation01.jpg"><img src="{{site.url}}/img/posts/india-ml-meet/presentation01.jpg" alt=""></a>
+	<a href="{{site.url}}/img/posts/india-ml-meet/presentation02.jpg"><img src="{{site.url}}/img/posts/india-ml-meet/presentation02.jpg" alt=""></a>
 	<figcaption>Keynote</figcaption>
 </figure>
 
@@ -55,8 +52,8 @@ to this, it can even predict at what ratio water and fertilizers should be provi
 the crop. The interesting thing is it’s already started in Andra Pradesh(India).
 
 <figure class="half">
-	<a href="{{site.url}}/images/IndiaMLMeet/royce01.jpg"><img src="{{site.url}}/images/IndiaMLMeet/royce01.jpg" alt=""></a>
-	<a href="{{site.url}}/images/IndiaMLMeet/royce02.jpg"><img src="{{site.url}}/images/IndiaMLMeet/royce02	.jpg" alt=""></a>
+	<a href="{{site.url}}/img/posts/india-ml-meet/royce01.jpg"><img src="{{site.url}}/img/posts/india-ml-meet/royce01.jpg" alt=""></a>
+	<a href="{{site.url}}/img/posts/india-ml-meet/royce02.jpg"><img src="{{site.url}}/img/posts/india-ml-meet/royce02	.jpg" alt=""></a>
 	<figcaption>Keynote</figcaption>
 </figure>
 
@@ -104,9 +101,9 @@ exposure, but also a good network of friends. Thank you [Microsoft](https://www.
 and [Techjini](http://www.techjini.com)
 
 <figure class="third">
-	<a href="{{site.url}}/images/IndiaMLMeet/hackathon01.jpg"><img src= "{{site.url}}/images/IndiaMLMeet/hackathon01.jpg" alt=""></a>
-	<a href="{{site.url}}/images/IndiaMLMeet/hackathon02.jpg"><img src="{{site.url}}/images/IndiaMLMeet/hackathon02.jpg" alt=""></a>
-	<a href="{{site.url}}/images/IndiaMLMeet/closing.jpg"><img src="{{site.url}}/images/IndiaMLMeet/closing.jpg" alt=""></a>
+	<a href="{{site.url}}/img/posts/india-ml-meet/hackathon01.jpg"><img src= "{{site.url}}/img/posts/india-ml-meet/hackathon01.jpg" alt=""></a>
+	<a href="{{site.url}}/img/posts/india-ml-meet/hackathon02.jpg"><img src="{{site.url}}/img/posts/india-ml-meet/hackathon02.jpg" alt=""></a>
+	<a href="{{site.url}}/img/posts/india-ml-meet/closing.jpg"><img src="{{site.url}}/img/posts/india-ml-meet/closing.jpg" alt=""></a>
 	<figcaption>Bye Bye</figcaption>
 </figure>
 
