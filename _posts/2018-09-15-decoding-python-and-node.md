@@ -4,6 +4,7 @@ title: "Decoding Python as a NodeJS developer."
 bigimg: /img/posts/python-node/header.jpeg
 share-img: /img/posts/python-node/header.jpeg
 tags: [blog, programming, opinion]
+show-avatar: false
 ---
 
 > So I took a turn to write a live Python app. Let me take you through a journey of a Javascript developer writing a Python project
@@ -39,12 +40,11 @@ Async code usually comes under the cost of readability. But the recent ES6 `asyn
 
 ## Execution pattern
 Concurrency is by default to NodeJS/Javascript[sort of, not as go routine concurrency]. This is achieved by the use of event loop and its single threaded concept. Event-loop some times comes under some cost, which we will discuss in further part. So basically any request emerging from remote server, will be processed by the event loop.
-Python, to be precise Flask, come out of the box with a single process. So if we simply put the dev environment to live, you could see the request getting bottle-necked. And no one does that, we usually use workers to implement this. We use Gunicorn workers, to do parallel processing of the requests. Gunicorn could be configured for both [syncronus and asynchronus](https://stackoverflow.com/questions/10938360/how-many-concurrent-requests-does-a-single-flask-process-receive?answertab=votes#tab-top) execution.
+Python, to be precise Flask, come out of the box with a single process. So if we simply put the dev environment to live, you could see the request getting bottle-necked. And no one does that, we usually use workers to implement this. We use Gunicorn workers, to do parallel processing of the requests. Gunicorn could be configured for both [synchronous and asynchronous](https://stackoverflow.com/questions/10938360/how-many-concurrent-requests-does-a-single-flask-process-receive?answertab=votes#tab-top) execution.
 
 ## JSON and marshmallow
-XML is a long gone stories for developers now(sorry for legacy devolopers). JSON is now used as the common response data-type. And for Javascript json is first class citizen. And json data recived or to be send from the server, it could be simply loaded to a variable and do operations on that[Well this is bot good and bad].
-
-On the other hand, there is no native support for json objects in Python. Which means you cant directly operate on top of JSON objects in Python. JSON objects is to converted to Python objects and only on that objects operations could be performed.
+XML is a long gone stories for developers now(sorry for legacy developers). JSON is now used as the common response data-type. And for Javascript json is first class citizen. And json data received or to be send from the server, it could be simply loaded to a variable and do operations on that[Well this is bot good and bad].
+On the other hand, there is no native support for json objects in Python. Which means you cant directly operate on top of JSON objects in Python. JSON objects is to converted to Python objects and only on that objects operations could be performed. [Marshmallow](https://marshmallow.readthedocs.io/) library could help this action in python.
 
 ## Functional support
 Both language support functional paradigm out of the box. Or functions are considered as first class citizen by both Python and Javascript. So in these languages
