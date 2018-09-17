@@ -24,10 +24,10 @@ description: Personal blog of Vineesh Narikutty Pacha
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Hire Me: "hireme"
-  Resume: "resume"
   Talks : "talks"
   Gallery : "gallery"
+  Hire Me: "hireme"
+  Resume: "resume"
   Resources:
     - Dot files: "https://github.com/vineeshnp/dotfiles"
     - Learn markdown: "http://www.markdowntutorial.com/"
