@@ -26,6 +26,8 @@ navbar-links:
   About Me: "aboutme"
   Hire Me: "hireme"
   Resume: "resume"
+  Talks : "talks"
+  Gallery : "gallery"
   Resources:
     - Dot files: "https://github.com/vineeshnp/dotfiles"
     - Learn markdown: "http://www.markdowntutorial.com/"
