@@ -96,11 +96,11 @@ On the other hand if we are going with PaaS services, configurations might be av
 Both Python and NodeJS is great tool for back end. Both are growing exponentially. Choosing the right platform depends upon several aspects and tradeoffs. Few of them worth mentioning are
 
 ## Go with Python if you are building
-* Monolithic
-* Computational intensive
-* You have good no of Python developers in the organization
+* Monolithic.
+* Computational intensive.
+* You have good no of Python developers in the organization.
 
 ## Go with NodeJS if you are building
-* Microservice
-* Data Intensive
-* You have good no of Python developers Javascript in the organization
+* Microservice.
+* Data Intensive.
+* You have good no of Javascript developers in the organization.
