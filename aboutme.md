@@ -4,11 +4,11 @@ title: About me
 subtitle: A Learner,...
 ---
 
-A passionate developer. Started coding at the age of 14. Cherish what I do. Loves challenges. Self learner, Speaker, traveller, Husband and Pianist.
+A passionate developer. Started coding at the age of 14. Cherish what I do. Loves challenges. Self learner, Speaker, Traveller, Father, Husband and Pianist.
 
 # Work 
-Embarked industrial career from April 24th 2015. Now associated with [Techjini](http://www.techjini.com) as Software Engineer. 
-Primarily focused on backend development, have been dealt with complex problem solving
+Embarked industrial career from April 24th 2015. Now associated with [Mercedes-Benz Research and Development India](https://mbrdi.co.in/) as Senior Consultant. 
+Primarily focused on full stack development, have been dealt with complex problem solving
 algorithms. Had hands on experience in building real time computational intensive 
 backed infrastructure. 
 
@@ -16,7 +16,7 @@ backed infrastructure.
 
 | Technology |Proficiency(1-5) | fondness(1-5) |
 | :------ |:--- | :--- |
-| Javascript(Backend) | 4.5 | 3 |
+| Javascript | 4.5 | 3 |
 | Python* | 3 | 4.5 |
 | Java | 3 | 3 |
 | C | 3 | 4.5 |
