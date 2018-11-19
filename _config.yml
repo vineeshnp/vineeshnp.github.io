@@ -23,7 +23,9 @@ description: Personal blog of Vineesh Narikutty Pacha
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  About Me:
+     - about: "aboutme"
+     - books: "pages/books"
   Talks : "talks"
   Gallery : "gallery"
   Hire Me: "hireme"
