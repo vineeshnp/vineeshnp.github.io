@@ -253,7 +253,7 @@ ___
 
 Licencing is a crucial part of software development. We have to be cautious about licenses, when dependencies are being resolved. Most of the time, architects are responsible for all these actions. But that time is long gone, now junior developer may make decision. Decision of using a specific `npm` or `maven` or `nuget` module to avoid re-invention of wheel. Thus as a developer it is our responsibility to understand how each licence matter to our work.
 
-On the other hand its important to specify the licence in a project we start.This is cardinal during distribution. 
+On the other hand its important to specify the licence in a project we start. This is cardinal during distribution. 
 
 Just to add, my personal choice for an open source project is MIT.
 
