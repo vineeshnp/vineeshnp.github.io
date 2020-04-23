@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Five points for a new and a better project."
+title: "Five practices for a perfect project."
 bigimg: /img/posts/five-points-for-a-new-project/header.jpg
 share-img: /img/posts/five-points-for-a-new-project/header.jpg
 tags: [blog, programming, opinion]
@@ -207,13 +207,13 @@ Few examples of code formatters are.
 * In other words we can say, its a code which tests the source code.
 
 ### Why we should write automated unit tests?
-* A considerable amount of developer's testing time can be saved with automated unit test.
+* A considerable amount of time spent by a developer on testing can be saved.
     * Say we take 10 minute to unit test all the modules manually.
     * Lets say we makes a delivery every day.
-    * In a month(20 days) total time spent on testing is 200 minutes, more than 3 hours.
-* Thus an automated unit testing should be an integral part of our project.
+    * In a month(20 days) total time spent on testing will be 200 minutes, thats more than 3 hours.
+* Thus an automated unit testing should be an integral part of a project.
 * Most language and associated frame work have dedicated tools for unit testing.
-* Such tools simplifies writing unit tests, and provides hassle free integration of CI-CD pipeline.
+* Such tools simplifies writing unit tests, and provides hassle free integration to CI-CD pipeline.
 
 ### Apart from the above 5, following are few good to have features.
 
