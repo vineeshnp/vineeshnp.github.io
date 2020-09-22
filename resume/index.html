@@ -14,22 +14,24 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
 
-    <link href="http://vineeshnp.com/resume/src/resume.css" rel="stylesheet">
-    <script src="http://vineeshnp.com/resume/src/resume.js"></script>
+    <link href="./src/resume.css" rel="stylesheet">
+    <script src="./src/resume.js"></script>
 
 </head>
 
 <body ng-app="Resume" ng-cloak="">
     <resume>
-        <resume-heading first-name="Vineesh" last-name="N P" website="vineeshnp.com" linkedin="vineeshnp" github="vineeshnp" email="mail@vineeshnp.com" phone="+919446908898">
+        <resume-heading first-name="Vineesh" last-name="N P" website="vineeshnp.com" linkedin="vineeshnp" github="vineeshnp" email="mail@vineeshnp.com" phone="+91 9446 9088 98">
         </resume-heading>
         <resume-body>
             <resume-column flex="20">
                 <sidebar-category name="Education">
                     <p>Cochin University of Science and Technology</p>
+                    <p>Bachelor of Technology</p>
                     <p>Computer Science And Engineering</p>
                 </sidebar-category>
                 <sidebar-category name="Achievements">
+                    <p>Departmental Award - Mercedes-Benz R&D India - 2019</p>
                     <p><a href="https://www.meetup.com/JavaScript-Meetup-Bangalore/events/252775912/" target="_blank">Speaker</a> - #23 Java Script Meetup Bangalore - 2018</p>
                     <p><a href="https://www.facebook.com/events/1254984254586099/" target="_blank">Speaker</a> - Google Cloud Next'17 Extended Meetup Bangalore - 2017</p>
                     <p>Participant - Microsoft Machine Learning &amp; Data Sciences Conference - 2016</p>
@@ -48,26 +50,31 @@
             </resume-column>
             <resume-column flex="80">
                 <category name="Professional Experience">
-                    <category-item title="Senior Consultant" subtitle="Mercedes-Benz R&D India [Daimler AG subsidiary] (Sep-18 - Now)">
-                        <li>Leading a team responsible for development of advanced drawing tools.</li>
+                    <category-item title="Senior Consultant" subtitle="Mercedes-Benz R&D India [Daimler AG subsidiary] (Sep-18 to now)">
+                        <li>Leading team responsible for development of advanced drawing tools.</li>
                         <li>Full stack development including CI/CD.</li>
                         <li>NodeJS, ReactJS, Python, Java and C#</li>
                     </category-item>
-                    <category-item title="Software Engineer" subtitle="Techjini Solutions Pvt Ltd (Apr-16 to Sept-18)">
+                    <category-item title="Software Engineer" subtitle="Datamatics Digital [Formerly - Techjini] (Apr-16 to Sept-18)">
                         <li>Backend Developer.</li>
                         <li>Architected and deployed scalable backend.</li>
-                        <li>Specialized on NodeJS, Python, Flask, ExpressJS, Web Sockets and real time systems...</li>
+                        <li>Specialized on NodeJS, Python, Flask, ExpressJS, Web Sockets and real time systems.</li>
                     </category-item>
                     <category-item title="System Analyst" subtitle="BizMobile IT Solutions Pvt Ltd (Jun-15 to Mar-16) ">
                         <li>Backend Developer</li>
-                        <li>Involved in writing scalable backend. </li>
-                        <li>Responsible for leading mobile development team</li>
+                        <li>Involved in writing scalable backend.</li>
+                        <li>Responsible for leading mobile development team.</li>
                     </category-item>
                 </category>
                 <category name="Projects">
+                    <category-item title="Advanced drawing tools" subtitle="Team Lead">
+                        <li>'Advanced drawing tools' are used to create, share and archive engineering drawings.</li>
+                        <li>Heterogenous tech stack is used for project development. Which in fact helped in comprehending tradeoff while architecting large project.</li>
+                        <li>Responsibility includes from planning, management to deployment of the deliverables.</li>
+                    </category-item>
                     <category-item title="Real time multiplayer game" subtitle="Backend developer">
                         <li>Real time multiplayer card game implemented using NodeJS and Websocket.</li>
-                        <li>Responsibility includes from architechting to deployment.</li>
+                        <li>Responsibility includes from architecting to deployment.</li>
                         <li>In-memory db and NoSql db were used for data persistance.</li>
                     </category-item>
                     <category-item title="Flask admin portal" subtitle="Backend developer">
@@ -78,12 +85,7 @@
                     <category-item title="Logram" subtitle="Author">
                         <li>Log streamer developed from scratch and open sourced.</li>
                         <li>Works as a library or as stand alone project to stream logs in real time, from server to browser.</li>
-                        <li><a href="https://github.com/vineeshnp/logram" target="_blank">https://github.com/vineeshnp/logram</a></li>
-                    </category-item>
-                    <category-item title="Food Ordering App" subtitle="Backend developer">
-                        <li>The core application is a food ordering app to sell and buy home made food.</li>
-                        <li>Responsible for implementing REST apis for admin module.</li>
-                        <li>NodeJS, ExpressJS and MySQL were used.</li>
+                        <li><a href="https://github.com/vineeshnp/logram" target="_blank">https://github.com/vineeshnp/logram</a>[Archived]</li>
                     </category-item>
                 </category>
                 <category name="Skills">
