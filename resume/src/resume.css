@@ -2,6 +2,18 @@ h1, h2, h3, h4, h5, h6, p, a, li, span {
   font-family: 'Raleway', sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
+.category a{
+  color: #283593 !important;
+}
+
+a:hover{
+  color: #3F51B5 !important;
+}
+
 .resume {
   background-color: #1f1f1f;
   min-height: 100vh;
