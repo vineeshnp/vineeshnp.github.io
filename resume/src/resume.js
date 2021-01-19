@@ -89,11 +89,15 @@ angular
     bindings: {
       title: "@",
       subtitle: "@",
+      homepage: "@"
     },
     transclude: true,
     template: `<div class="category">
     <h5 class="category-title md-body-2">{{r.title}}</h5>&nbsp;
-    <h5 class="category-subtitle md-caption">{{r.subtitle}}</h5>
+    <h5 class="category-subtitle md-caption"> 
+      <a ng-if="r.homepage" href="{{r.homepage}}" target="_blank">{{r.subtitle}}</a>
+      <span ng-if="!r.homepage">{{r.subtitle}}</span>
+    </h5>
     <ul class="category-bullets" ng-transclude></ul>
   </div>`,
   });
