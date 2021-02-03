@@ -97,6 +97,15 @@ category:last-of-type category-item:last-of-type .category {
   margin-bottom: 0 !important;
 }
 
+.category-languages {
+  right: 0px;
+  float: right;
+  position: relative;
+  font-size: 24px;
+  font-weight: bolder;
+  color:#1a1717b9
+}
+
 a.page-subhead {
   color: initial;
   text-decoration: none;
