@@ -89,7 +89,8 @@ angular
     bindings: {
       title: "@",
       subtitle: "@",
-      homepage: "@"
+      homepage: "@",
+      languages: "="
     },
     transclude: true,
     template: `<div class="category">
@@ -97,6 +98,11 @@ angular
     <h5 class="category-subtitle md-caption"> 
       <a ng-if="r.homepage" href="{{r.homepage}}" target="_blank">{{r.subtitle}}</a>
       <span ng-if="!r.homepage">{{r.subtitle}}</span>
+    </h5>&nbsp;
+    <h5 class="category-subtitle category-languages">
+      <span ng-if="r.languages" ng-repeat="(key, value) in r.languages">
+        <i class="devicon-{{value}}-plain" title={{value}}></i>
+      </span>
     </h5>
     <ul class="category-bullets" ng-transclude></ul>
   </div>`,
