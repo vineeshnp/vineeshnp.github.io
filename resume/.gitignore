@@ -1,4 +1,0 @@
-src/*.min.*
-*.min.*
-*.log
-node_modules/
