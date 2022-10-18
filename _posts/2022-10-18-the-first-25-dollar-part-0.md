@@ -36,7 +36,7 @@ Android SDK out of the box gives us a project structure to get started. I then m
 
 * Home screen
 
-     <img src="/img/posts/2022-10/le-search-1.png" width="40%" />
+     <img src="/img/posts/2022-10/le-search-1.png" width="50%" />
 
 
 ### Good old SDK issues 👴
@@ -55,6 +55,6 @@ On several late nights I was literally at a dead end. Maybe with some bugs or wi
 
 * splash screen
     
-    <img src="/img/posts/2022-10/le-splash.png" width="40%" />
+    <img src="/img/posts/2022-10/le-splash.png" width="50%" />
 
 To be continued…
