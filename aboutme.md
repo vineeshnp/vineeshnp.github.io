@@ -4,13 +4,13 @@ title: About me
 subtitle: A Learner,...
 ---
 
-A passionate developer. Started coding at the age of 14. Cherish what I do. Loves challenges. Self learner, Speaker, Traveller, Father, Husband and Pianist.
+A passionate Engineer. Started coding at the age of 14. Cherish what I do. Loves challenges. Self learner, Speaker, Traveler, Father, Husband and Pianist.
 
 # Work 
-Embarked industrial career from April 24th 2015. Now associated with [SAP](https://sap.com/) as Software Developer. 
-Primarily focused on full stack development, have been dealt with complex problem solving
-algorithms. Had hands on experience in building real time computational intensive 
-backed infrastructure. As well as data intensive javascript back-ends.
+I am a software engineer working at Mercedes Benz Research based out of Stuttgart, Germany. 
+I currently work within the Speech Team of Mercedes Benz Operating System - MB.OS.
+I have been dealt with complex problem solving algorithms. Had hands on experience in building
+ real time computational intensive backend infrastructure.
 
 {% include_relative technology.md %}
 
