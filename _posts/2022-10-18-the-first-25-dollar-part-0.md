@@ -3,7 +3,7 @@ layout: post
 title: "The first $25 - Part 0"
 subtitle: My life story of creating the fastest lyrics searching application on playstore.
 bigimg: /img/posts/2022-10/header.jpg
-share-img: /img/posts/leaving-daimler/de20.jpg
+share-img: /img/posts/2022-10/header.jpg
 tags: [life-event, lyrics-engine]
 show-avatar: false
 ---
