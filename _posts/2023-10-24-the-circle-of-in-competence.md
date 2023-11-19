@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Circle of In-Competence"
-subtitle:  A Paradoxical path you may oversee.
+subtitle:  A Paradoxical path you may overlook.
 bigimg: /img/posts/2023-11/header.jpg
 share-img: /img/posts/2023-11/header.jpg
 tags: [vnp-talks, thoughts, reflections]
