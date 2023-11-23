@@ -35,4 +35,4 @@ So, how can you ensure that you are genuinely operating within your circle of co
 
 ## Conclusion
 
-In conclusion, while the circle of incompetence can give an illusion of competence, it is essential to recognize this trap and strive for genuine mastery. By continuously learning, seeking feedback, reflecting, and embracing challenges, you can expand your circle of competence and achieve true excellence. Remember, the path to mastery is a journey, not a destination. Or in otherwards you should enjoy the ride, not just destination.
+In conclusion, while the circle of incompetence can give an illusion of competence, it is essential to recognize this trap and strive for genuine mastery. By continuously learning, seeking feedback, reflecting, and embracing challenges, you can expand your circle of competence and achieve true excellence. Remember, the path to mastery is a journey, not a destination. Or in other words you should enjoy the ride, not just destination.
