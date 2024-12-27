@@ -10,5 +10,4 @@ subtitle: Drop a mail
 * Drop a mail to
   **mail [at] vineeshnp.com**
 
-{% include_relative technology.md %}
 

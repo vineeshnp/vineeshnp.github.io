@@ -12,7 +12,6 @@ I currently work on #heymercedes, the voice assistant for Mercedes Benz cars and
 I have been dealt with complex problem solving algorithms. Had hands on experience in building
  real time computational intensive backend.
 
-{% include_relative technology.md %}
 
 # Graduation
 Graduated on Computer Science and Engineering from [CUSAT](http://www.cusat.nic.in/) University.
