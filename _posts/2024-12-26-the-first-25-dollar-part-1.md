@@ -8,10 +8,9 @@ tags: [life-event, lyrics-engine]
 show-avatar: false
 ---
 
-> "So this is the second part of [Part0](https://vineeshnp.com/2022-10-18-the-first-25-dollar-part-0/)
+> “The first version of the app was finally ready—a small yet exciting step in what felt like an endless journey. I’ve included a few screenshots to capture its early days. I started using the app, for myself. Especially when I listen to Eminem songs, where lyrics was hard for me to understand - the app started to give me a feel. Using the app was also like testing the app. I started saving my favorite lyrics to lyrics engine. This is one of the favorite features I baked in. Remember the time was 2g era, and 3 g started to sync across in India.”
 
-
-“The first version of the app was finally ready—a small yet exciting step in what felt like an endless journey. I’ve included a few screenshots to capture its early days. I started using the app, for myself. Especially when I listen to Eminem songs, where lyrics was hard for me to understand - the app started to give me a feel. Using the app was also like testing the app. I started saving my favorite lyrics to lyrics engine. This is one of the favorite features I baked in. Remember the time was 2g era, and 3 g started to sync across in India.”
+This is the second part of [Part0](https://vineeshnp.com/2022-10-18-the-first-25-dollar-part-0/)
 
 
 ### The Testing Begins: Overcoming Early Challenges
