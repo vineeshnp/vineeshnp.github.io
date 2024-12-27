@@ -18,11 +18,11 @@ show-avatar: false
 
 Apparently, testing on the Android VM sucked back then. The emulator struggled to deliver acceptable frame rates, making it nearly impossible to accurately gauge the app's performance. This forced me to test directly on my phone instead. Frame rates were so bad that I generally tested directly on my phone. I tested the app directly on my Galaxy Note 1—a device my dad generously bought for me. At 32,000 rupees, it was a significant investment, especially given our financial situation at the time. This wasn’t just a phone; it was a symbol of his unwavering belief in my dreams, a gesture that motivated me to push forward.
 
-<img src="/img/posts/2024-12/le1.png" width="50%" />
-<img src="/img/posts/2024-12/le2.png" width="50%" />
+<img src="/img/posts/2024-12/app-screen-shots/le1.png" width="50%" />
+<img src="/img/posts/2024-12/app-screen-shots/le2.png" width="50%" />
 
-<img src="/img/posts/2024-12/hle1.png" width="50%" />
-<img src="/img/posts/2024-12/hle2.png" width="50%" />
+<img src="/img/posts/2024-12/app-screen-shots/hle1.png" width="50%" />
+<img src="/img/posts/2024-12/app-screen-shots/hle2.png" width="50%" />
 
 As I was done testing on my phone, I started sending the build (APK file) to a few of my friends, who also listened to English songs. I received some good feedback from them, along with some suggestions. I would consider this the beta testing phase of the app.
 
