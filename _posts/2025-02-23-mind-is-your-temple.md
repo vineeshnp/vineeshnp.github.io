@@ -4,10 +4,10 @@ title: "Mind is your temple 🏛️"
 description: "Contemplating my thoughts on mindfulness and self-reflection."
 modified: 2025-02-23
 tags: [thoughts, reflections, 📖]
-bigimg: /img/posts/2025-02/mind-temple.png
-share-img: /img/posts/2025-02/mind-temple.png
+bigimg: /img/posts/2025-03/mind-temple.png
+share-img: /img/posts/2025-03/mind-temple.png
 show-avatar: false
-published: false
+published: true
 ---
 
 
